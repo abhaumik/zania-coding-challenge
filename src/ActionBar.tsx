@@ -1,4 +1,4 @@
-import React, { ChangeEvent, ForwardedRef, forwardRef } from "react";
+import { ChangeEvent, ForwardedRef, forwardRef } from "react";
 import cc from "classnames";
 
 export interface ActionBarProps {

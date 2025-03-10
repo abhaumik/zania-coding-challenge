@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useEffect, useRef, useState } from "react";
+import { ChangeEvent, useEffect, useRef, useState } from "react";
 import { FileData } from "./types";
 import ActionBar from "./ActionBar";
 import DataRow from "./DataRow";
