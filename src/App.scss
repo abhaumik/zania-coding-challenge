@@ -1,0 +1,50 @@
+.datagrid {
+  &__title {
+    font-size: large;
+    font-weight: bold;
+    margin: 16px;
+  }
+  &__table {
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px 0 grey;
+    margin: 16px;
+    margin-top: 32px;
+    width: calc(100vw - 32px);
+
+    &__header {
+      &-action-bar {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        width: 100%;
+        padding: 16px;
+        align-items: center;
+
+        &__download-btn {
+          font-family: sans-serif;
+
+          &.disabled {
+            color: grey;
+          }
+        }
+      }
+
+      &-column-names > th {
+        text-align: start;
+        padding: 16px;
+      }
+    }
+
+    &__header-row,
+    &__data-row > :is(th, td) {
+      border-bottom: 1px solid grey;
+      white-space: pre-line;
+      word-break: break-word;
+      padding: 16px;
+    }
+
+    &__data-row:last-child > td {
+      border-bottom: none;
+    }
+  }
+}
